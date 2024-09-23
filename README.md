@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Design Recreation Showcase
 
-## Getting Started
+## 🎨 About the Project
 
-First, run the development server:
+**Design Recreation Showcase** is a personal project aimed at recreating existing designs and implementing them in a development environment. This project allows me to explore, practice, and refine my design and development skills while crediting and highlighting the work of the original designers.
 
+## 🚀 Purpose
+
+The main goals of this project are to:
+
+- Recreate various designs to improve my front-end skills.
+- Share my recreations with the community while giving proper credit to the original creators.
+- Provide a space where users can discover new designs and creative projects.
+
+## 🔧 Technologies Used
+
+- **Frontend Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [TailwindCSS](https://tailwindcss.com/)
+- **UI Components**: Using libraries like [Shadcn/UI](https://shadcn.dev/) for building user interface components.
+- **Data Management**: [Prisma](https://www.prisma.io/) for database interaction.
+- **Database**: PostgreSQL via [Supabase](https://supabase.com/).
+- **Authentication**: User session management with [NextAuth.js](https://next-auth.js.org/).
+- **Deployment**: Deployed on [Vercel](https://vercel.com/).
+
+## 🖼️ Features Overview
+
+- **Design Recreation**: Each recreated design is carefully implemented to match the original, with proper credit given to the creator.
+- **Dynamic Navigation**: Users can explore different pages and sections of recreated designs.
+- **Account Management**: Users can log in via GitHub to interact with certain features (such as managing "Deals").
+
+## 🔗 Useful Links
+
+- **Deployed Project**: [Design Recreation Showcase](#)
+- **Portfolio**: Check out my other projects and recreated designs on [My Portfolio](#).
+
+## 🛠️ Installation and Development
+
+If you'd like to clone the project and run it locally, follow these steps:
+
+1. Clone the project:
+
+   ```bash
+   git clone https://github.com/your-username/design-recreation-showcase.git
+
+   ```
+
+2. Install the dependencies
+
+````bash
+pnpm install
+
+3. Configure the envrionment variables. Create a .env.local file and add your configuration (Supabase, NextAuth, etc).
+
+4. Run the project in development mode:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+pnpm run dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open "http://localhost:3000" to vie the project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎫 Credits
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- All designs recreated in this project are the property of their respective creators. I make sure to properly credit each designer for their outstanding work, and the original author is always mentioned.
 
-## Learn More
+## 🙌 Contributing
 
-To learn more about Next.js, take a look at the following resources:
+- Got an idea to improve the project? Feel free to create an issue or submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📑 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- This project is licensed under the MIT License.
+````
