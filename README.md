@@ -46,19 +46,19 @@ If you'd like to clone the project and run it locally, follow these steps:
 
 2. Install the dependencies
 
-  ```bash
-  pnpm install
+```bash
+pnpm install
 
-  ```
+```
 
 3. Configure the envrionment variables. Create a .env.local file and add your configuration (Supabase, NextAuth, etc).
 
 4. Run the project in development mode:
 
-  ```bash
-  pnpm run dev
-  
-  ```
+```bash
+pnpm run dev
+
+```
 
 5. Open "http://localhost:3000" to vie the project.
 

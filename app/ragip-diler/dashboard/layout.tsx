@@ -1,14 +1,14 @@
-import SidebarDashboard from "@/components/ragip-diler/navigation/sidebar-dashboard";
+import SidebarDashboard from '@/components/ragip-diler/navigation/sidebar-dashboard';
 
 export default function RagipDilerDashboardLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<section className="flex">
-			<SidebarDashboard />
-			{children}
-		</section>
-	);
+  return (
+    <section className="flex">
+      <SidebarDashboard />
+      {children}
+    </section>
+  );
 }

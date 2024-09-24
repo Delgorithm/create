@@ -1,3 +1,3 @@
 export default function TransactionsPage() {
-	return <p>Page</p>;
+  return <p>Page</p>;
 }
