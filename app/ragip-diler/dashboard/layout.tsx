@@ -1,4 +1,4 @@
-import SidebarDashboard from "@/components/navigation/ragip-diler/navigation/sidebar-dashboard";
+import SidebarDashboard from "@/components/ragip-diler/navigation/sidebar-dashboard";
 
 export default function RagipDilerDashboardLayout({
 	children,
