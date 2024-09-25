@@ -66,8 +66,8 @@ export default function HeaderGraph() {
               <DialogHeader>
                 <DialogTitle>Move Money</DialogTitle>
                 <DialogDescription>
-                  Make changes to your account here. Click save when you're
-                  done.
+                  Make changes to your account here. Click save when
+                  you&lsquo;re done.
                 </DialogDescription>
               </DialogHeader>
             </DialogContent>
@@ -87,7 +87,8 @@ export default function HeaderGraph() {
               <DialogHeader>
                 <DialogTitle>Add Account</DialogTitle>
                 <DialogDescription>
-                  Create a new account to add. CLick save when you're done.
+                  Create a new account to add. CLick save when you&lsquo;re
+                  done.
                 </DialogDescription>
               </DialogHeader>
             </DialogContent>
