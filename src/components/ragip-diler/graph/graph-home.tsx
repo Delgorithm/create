@@ -43,7 +43,7 @@ const chartConfig = {
 
 export function GraphHome() {
   return (
-    <div className="w-full">
+    <section>
       <CardContent className="border-none shadow-none">
         <ChartContainer config={chartConfig}>
           <AreaChart
@@ -97,6 +97,6 @@ export function GraphHome() {
           </AreaChart>
         </ChartContainer>
       </CardContent>
-    </div>
+    </section>
   );
 }

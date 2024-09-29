@@ -38,7 +38,7 @@ export default function CardVirtualPhysical() {
       <TabsList className="flex justify-center items-center w-60 gap-8 rounded-full">
         <TabsTrigger value="physical">Physical</TabsTrigger>
         <TabsTrigger value="virtual">
-          Virtual <span>(3)</span>
+          Virtual <span className="ml-1 text-neutral-300">(3)</span>
         </TabsTrigger>
       </TabsList>
       <TabsContent value="physical">
@@ -56,10 +56,10 @@ export default function CardVirtualPhysical() {
                     <div>
                       <div>
                         <span
-                          className={`absolute left-0 top-5 size-2 rounded-full ${item.status === 'Inactive' ? 'bg-red-400' : 'bg-sky-400'} opacity-75`}
+                          className={`absolute left-0 top-5 size-2 rounded-full ${item.status === 'Inactive' ? 'bg-red-600' : 'bg-blue-400'} opacity-75`}
                         ></span>
                         <span
-                          className={`animate-ping absolute left-0 top-5 size-2 rounded-full ${item.status === 'Inactive' ? 'bg-red-400' : 'bg-sky-400 '}opacity-75`}
+                          className={`animate-ping absolute left-0 top-5 size-2 rounded-full ${item.status === 'Inactive' ? 'bg-red-600' : 'bg-blue-400 '}opacity-75`}
                         ></span>
                       </div>
                       <p className="ml-4">{item.status}</p>

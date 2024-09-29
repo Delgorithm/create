@@ -4,12 +4,12 @@ import { GraphHome } from './graph-home';
 
 export default function MainGraph() {
   return (
-    <section className="px-14 grid grid-cols-2 grid-rows-2">
-      <div className="col-span-3">
-        <GraphHome />
+    <section className="px-6">
+      <GraphHome />
+      <div className="flex items-center gap-10 px-9">
+        <LeftCard />
+        <RightCard />
       </div>
-      <LeftCard />
-      <RightCard />
     </section>
   );
 }
