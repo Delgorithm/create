@@ -1,3 +1,5 @@
+import LeftCard from '../cards/left-card';
+import RightCard from '../cards/right-card';
 import { GraphHome } from './graph-home';
 
 export default function MainGraph() {
@@ -6,8 +8,8 @@ export default function MainGraph() {
       <div className="col-span-3">
         <GraphHome />
       </div>
-      <div>1</div>
-      <div>2</div>
+      <LeftCard />
+      <RightCard />
     </section>
   );
 }
