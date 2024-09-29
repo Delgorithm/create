@@ -28,7 +28,7 @@ import {
 
 export default function HeaderGraph() {
   return (
-    <header className="px-14 py-6 flex flex-col gap-4">
+    <header className="px-14 py-6 flex flex-col gap-4 text-neutral-950">
       <p className="font-semibold">Balance</p>
 
       <section className="flex items-center justify-between">
