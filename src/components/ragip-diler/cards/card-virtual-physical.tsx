@@ -35,7 +35,7 @@ export default function CardVirtualPhysical() {
       defaultValue="virtual"
       className="w-full my-2 flex justify-center items-center flex-col"
     >
-      <TabsList className="flex justify-center items-center w-64 gap-8 rounded-full">
+      <TabsList className="flex justify-center items-center w-60 gap-8 rounded-full">
         <TabsTrigger value="physical">Physical</TabsTrigger>
         <TabsTrigger value="virtual">
           Virtual <span>(3)</span>

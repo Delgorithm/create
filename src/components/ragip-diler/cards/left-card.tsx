@@ -5,7 +5,7 @@ import CardVirtualPhysical from './card-virtual-physical';
 
 export default function LeftCard() {
   return (
-    <section>
+    <section className="mx-10">
       <Card>
         <CardHeader className="flex flex-row items-center justify-between text-sm border-b h-2">
           <p>Cards</p>
