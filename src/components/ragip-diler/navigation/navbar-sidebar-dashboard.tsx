@@ -60,7 +60,7 @@ export default function NavbarSidebarDashboard() {
   const thirdPath = pathPages.slice(3, 6);
 
   return (
-    <nav className="flex flex-col text-sm">
+    <nav className="flex flex-col text-xs">
       <ul className="flex flex-col">
         {firstPath.map((item) => (
           <li key={item.href}>
@@ -72,7 +72,7 @@ export default function NavbarSidebarDashboard() {
                   : 'text-gray-700'
               }`}
             >
-              <span className="size-5">{item.icon}</span>
+              <span>{item.icon}</span>
               <p>{item.label}</p>
             </Link>
           </li>
@@ -107,7 +107,7 @@ export default function NavbarSidebarDashboard() {
                   : 'text-gray-700'
               }`}
             >
-              <span className="size-5">{item.icon}</span>
+              <span>{item.icon}</span>
               <p>{item.label}</p>
             </Link>
           </li>
@@ -144,7 +144,7 @@ export default function NavbarSidebarDashboard() {
                   : 'text-gray-700'
               }`}
             >
-              <span className="size-5">{item.icon}</span>
+              <span>{item.icon}</span>
               <p>{item.label}</p>
             </Link>
           </li>

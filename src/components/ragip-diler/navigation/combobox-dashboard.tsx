@@ -48,7 +48,7 @@ export function ComboboxDashboard() {
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild>
+      <PopoverTrigger asChild className="text-sm">
         <Button
           variant="outline"
           role="combobox"
