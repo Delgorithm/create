@@ -13,19 +13,19 @@ const carouselItems = [
     status: 'Active',
     logo: '/ragip-diler/visa-logo.svg',
     year: '1941',
-    name: 'Ragip Diller',
+    name: 'Ragip Diler',
   },
   {
     status: 'Inactive',
     logo: '/ragip-diler/visa-logo.svg',
     year: '2013',
-    name: 'Ragip Diller',
+    name: 'Ragip Diler',
   },
   {
     status: 'Active',
     logo: '/ragip-diler/visa-logo.svg',
     year: '2008',
-    name: 'Ragip Diller',
+    name: 'Ragip Diler',
   },
 ];
 
@@ -35,7 +35,7 @@ export default function CardVirtualPhysical() {
       defaultValue="virtual"
       className="w-full my-2 flex justify-center items-center flex-col"
     >
-      <TabsList className="flex justify-center items-center w-72 gap-8 rounded-full">
+      <TabsList className="flex justify-center items-center lg:w-72 gap-8 rounded-full">
         <TabsTrigger value="physical">Physical</TabsTrigger>
         <TabsTrigger value="virtual">
           Virtual <span className="ml-1 text-neutral-300">(3)</span>
@@ -47,11 +47,11 @@ export default function CardVirtualPhysical() {
         </section>
       </TabsContent>
       <TabsContent value="virtual" className="flex items-center justify-center">
-        <Carousel className="w-full max-w-xs">
+        <Carousel className="max-w-xs watch-sm:w-3/4 lg:w-full">
           <CarouselContent>
             {carouselItems.map((item, year) => (
               <CarouselItem key={year}>
-                <section className="h-52 bg-gray-100 rounded-lg text-sm my-2 px-4 flex flex-col justify-between">
+                <section className="h-52 bg-gray-100 rounded-lg text-sm my-2 px-4 flex flex-col justify-between lg:w-full">
                   <div className="relative flex items-center justify-between">
                     <div>
                       <div>

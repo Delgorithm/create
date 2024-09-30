@@ -19,7 +19,7 @@ import { ChevronDown, Search, User } from 'lucide-react';
 
 export function BreadcrumbDashboard() {
   return (
-    <section className="border-b-[0.5px] border-neutral-400 px-14 py-6">
+    <section className="border-b-[0.5px] border-neutral-400 watch-sm:px-4 lg:px-14 py-6">
       <nav className="flex items-center justify-between">
         <div>
           <Breadcrumb>
@@ -34,10 +34,10 @@ export function BreadcrumbDashboard() {
                 <DropdownMenuTrigger asChild>
                   <div className="flex items-center gap-2 text-neutral-950">
                     <p>All Acounts</p>
-                    <ChevronDown className="size-4 " />
+                    <ChevronDown className="size-4" />
                   </div>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-32">
+                <DropdownMenuContent className="lg:w-32">
                   <DropdownMenuLabel className="text-center">
                     My Account
                   </DropdownMenuLabel>
@@ -62,7 +62,7 @@ export function BreadcrumbDashboard() {
             </BreadcrumbList>
           </Breadcrumb>
         </div>
-        <div className="relative">
+        <div className="relative watch-sm:hidden lg:flex">
           <Input
             className="w-24 border-none pl-8 shadow-none"
             placeholder="Search"

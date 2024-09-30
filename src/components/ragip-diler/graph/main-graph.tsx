@@ -4,9 +4,9 @@ import { GraphHome } from './graph-home';
 
 export default function MainGraph() {
   return (
-    <section className="px-6">
+    <section className="watch-sm:px-2 lg:px-6">
       <GraphHome />
-      <div className="flex items-center gap-10 px-9">
+      <div className="flex watch-sm:flex-col lg:flex-row items-center gap-6 lg:px-10">
         <LeftCard />
         <RightCard />
       </div>

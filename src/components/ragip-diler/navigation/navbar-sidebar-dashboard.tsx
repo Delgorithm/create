@@ -60,31 +60,36 @@ export default function NavbarSidebarDashboard() {
   const thirdPath = pathPages.slice(3, 6);
 
   return (
-    <nav className="flex flex-col text-xs">
+    <nav className="flex flex-col text-xs lg:translate-x-0 watch-sm:gap-3">
       <ul className="flex flex-col">
         {firstPath.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`flex items-center gap-3 py-2 pl-2 ${
+              className={`flex items-center gap-3 watch-sm:py-4 lg:y-2 lg:pl-2 ${
                 pathname === item.href
                   ? 'rounded-md bg-neutral-300/30 font-semibold'
                   : 'text-gray-700'
               }`}
             >
               <span>{item.icon}</span>
-              <p>{item.label}</p>
+              <p className="watch-sm:hidden lg:flex">{item.label}</p>
             </Link>
           </li>
         ))}
       </ul>
 
       <ul>
-        <Accordion type="single" collapsible className="w-full gap-3 py-2 pl-2">
+        <Accordion
+          type="single"
+          collapsible
+          className="w-full gap-3 py-2 lg:pl-2 watch-sm:hidden lg:flex"
+        >
           <AccordionItem value="payment">
             <AccordionTrigger>
               <p className="flex items-center gap-3 no-underline">
-                <WalletMinimal className="size-5" /> Payments
+                <WalletMinimal className="size-5" />
+                <span className="watch-sm:hidden lg:flex">Payments</span>
               </p>
             </AccordionTrigger>
             <div className="translate-x-5 translate-y-2 pl-4">
@@ -101,25 +106,30 @@ export default function NavbarSidebarDashboard() {
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`flex items-center gap-3 py-2 pl-2 ${
+              className={`flex items-center gap-3 watch-sm:py-0 lg:py-2 lg:pl-2 ${
                 pathname === item.href
                   ? 'rounded-md bg-neutral-300/30 font-semibold'
                   : 'text-gray-700'
               }`}
             >
               <span>{item.icon}</span>
-              <p>{item.label}</p>
+              <p className="watch-sm:hidden lg:flex">{item.label}</p>
             </Link>
           </li>
         ))}
       </ul>
 
       <ul>
-        <Accordion type="single" collapsible className="w-full gap-3 py-2 pl-2">
+        <Accordion
+          type="single"
+          collapsible
+          className="w-full gap-3 py-2 lg:pl-2 watch-sm:hidden lg:flex"
+        >
           <AccordionItem value="account">
             <AccordionTrigger>
               <p className="flex items-center gap-3 no-underline">
-                <Landmark className="size-5" /> Accounts
+                <Landmark className="size-5" />{' '}
+                <span className="watch-sm:hidden lg:flex">Accounts</span>
               </p>
             </AccordionTrigger>
             <div className="translate-x-5 translate-y-2 pl-4">
@@ -131,21 +141,23 @@ export default function NavbarSidebarDashboard() {
         </Accordion>
       </ul>
 
-      <p className="my-2 text-sm font-light text-neutral-500">Workflows</p>
+      <p className="my-2 text-sm font-light text-neutral-500 watch-sm:hidden lg:flex">
+        Workflows
+      </p>
 
       <ul className="flex flex-col ">
         {thirdPath.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`flex items-center   gap-3 py-2 pl-2 ${
+              className={`flex items-center gap-3 watch-sm:py-4 lg:y-2 lg:pl-2 ${
                 pathname === item.href
                   ? 'rounded-md bg-neutral-300/30 font-semibold'
                   : 'text-gray-700'
               }`}
             >
               <span>{item.icon}</span>
-              <p>{item.label}</p>
+              <p className="watch-sm:hidden lg:flex">{item.label}</p>
             </Link>
           </li>
         ))}

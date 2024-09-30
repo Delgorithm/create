@@ -6,7 +6,7 @@ import CardVirtualPhysical from './card-virtual-physical';
 export default function LeftCard() {
   return (
     <section className="w-full">
-      <Card>
+      <Card className="watch-sm:mx-2">
         <CardHeader className="flex flex-row items-center justify-between text-sm border-b h-2">
           <p>Cards</p>
           <Link

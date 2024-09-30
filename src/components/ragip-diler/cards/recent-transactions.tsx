@@ -54,9 +54,11 @@ export default function RecentTransactions() {
           <CardContent className="flex items-center justify-between py-2 w-full">
             <div className="flex flex-col">
               <p className="font-medium">{item.title}</p>
-              <p className="font-extralight text-neutral-500">{item.date}</p>
+              <p className="font-extralight text-neutral-500 watch-sm:hidden lg:flex">
+                {item.date}
+              </p>
             </div>
-            <Badge className="bg-neutral-100 text-neutral-950 font-light hover:text-white">
+            <Badge className="bg-neutral-100 text-neutral-950 font-light hover:text-white watch-sm:hidden lg:flex">
               {item.category}
             </Badge>
             <p>-${item.price}</p>

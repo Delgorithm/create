@@ -28,12 +28,12 @@ import {
 
 export default function HeaderGraph() {
   return (
-    <header className="px-14 py-6 flex flex-col gap-4 text-neutral-950">
+    <header className="watch-sm:px-4 lg:px-14 py-6 flex flex-col gap-4 text-neutral-950">
       <p className="font-semibold">Balance</p>
 
-      <section className="flex items-center justify-between">
+      <section className="flex watch-sm:flex-col lg:flex-row lg:items-center lg:justify-between">
         <h2 className="text-3xl font-semibold">$5,689</h2>
-        <div className="flex items-center border-[0.5px] border-neutral-200 rounded-xl px-3 text-xs">
+        <div className="flex watch-sm:flex-col lg:flex-row items-center border-[0.5px] border-neutral-200 rounded-xl px-3 watch-sm:my-4 lg:my-0 text-xs">
           <article className="flex items-center gap-2">
             <Minus className="text-blue-500 size-10" />
             <p>Money in:</p>
@@ -41,7 +41,7 @@ export default function HeaderGraph() {
               <ArrowDown size={18} /> $12,037
             </span>
           </article>
-          <Minus className="rotate-90 text-neutral-100" />
+          <Minus className="watch-sm:hidden lg:flex rotate-90 text-neutral-100" />
           <article className="flex items-center gap-2">
             <Minus className="text-red-500 size-10" />
             <p>Money out:</p>
@@ -51,7 +51,7 @@ export default function HeaderGraph() {
           </article>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex watch-sm:flex-col lg:flex-row watch-sm:items-start items-center gap-4">
           <Dialog>
             <DialogTrigger asChild>
               <Button
@@ -77,7 +77,7 @@ export default function HeaderGraph() {
             <DialogTrigger asChild>
               <Button
                 variant="outline"
-                className="bg-white  px-2 flex items-center gap-2"
+                className="bg-white px-3 flex items-center gap-2"
               >
                 <Plus className="size-4" />
                 Add Account
@@ -94,31 +94,33 @@ export default function HeaderGraph() {
             </DialogContent>
           </Dialog>
 
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild className="px-1">
-              <Button variant="outline">
-                <EllipsisVertical />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="">
-              <DropdownMenuLabel>Options</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuGroup>
-                <DropdownMenuItem className="flex items-center gap-2">
-                  <span>Option 1</span>
-                  <ChevronRight className="size-4" />
-                </DropdownMenuItem>
-                <DropdownMenuItem className="flex items-center gap-2">
-                  <span>Option 2</span>
-                  <ChevronRight className="size-4" />
-                </DropdownMenuItem>
-                <DropdownMenuItem className="flex items-center gap-2">
-                  <span>Option 3</span>
-                  <ChevronRight className="size-4" />
-                </DropdownMenuItem>
-              </DropdownMenuGroup>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <div className="watch-sm:hidden lg:flex">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild className="px-1">
+                <Button variant="outline">
+                  <EllipsisVertical />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="">
+                <DropdownMenuLabel>Options</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuGroup>
+                  <DropdownMenuItem className="flex items-center gap-2">
+                    <span>Option 1</span>
+                    <ChevronRight className="size-4" />
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="flex items-center gap-2">
+                    <span>Option 2</span>
+                    <ChevronRight className="size-4" />
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="flex items-center gap-2">
+                    <span>Option 3</span>
+                    <ChevronRight className="size-4" />
+                  </DropdownMenuItem>
+                </DropdownMenuGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
         </div>
       </section>
     </header>

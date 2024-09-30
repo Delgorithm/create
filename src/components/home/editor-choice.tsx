@@ -20,6 +20,7 @@ export default function EditorChoice() {
       hours: 'x hours ago',
       parapraph: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
       autor: 'X',
+      link: '/',
     },
   ];
 
@@ -41,7 +42,7 @@ export default function EditorChoice() {
                   />
                 </Link>
                 <Badge className="bg-blue-500 hover:bg-blue-500/50 absolute bottom-2 left-2">
-                  Finance
+                  {item.badge}
                 </Badge>
               </div>
               <div className="flex items-center gap-2 text-xs">
