@@ -11,19 +11,19 @@ import Image from 'next/image';
 const carouselItems = [
   {
     status: 'Active',
-    logo: '/ragip-diller/visa-logo.svg',
+    logo: '/ragip-diler/visa-logo.svg',
     year: '1941',
     name: 'Ragip Diller',
   },
   {
     status: 'Inactive',
-    logo: '/ragip-diller/visa-logo.svg',
+    logo: '/ragip-diler/visa-logo.svg',
     year: '2013',
     name: 'Ragip Diller',
   },
   {
     status: 'Active',
-    logo: '/ragip-diller/visa-logo.svg',
+    logo: '/ragip-diler/visa-logo.svg',
     year: '2008',
     name: 'Ragip Diller',
   },
@@ -35,7 +35,7 @@ export default function CardVirtualPhysical() {
       defaultValue="virtual"
       className="w-full my-2 flex justify-center items-center flex-col"
     >
-      <TabsList className="flex justify-center items-center w-60 gap-8 rounded-full">
+      <TabsList className="flex justify-center items-center w-72 gap-8 rounded-full">
         <TabsTrigger value="physical">Physical</TabsTrigger>
         <TabsTrigger value="virtual">
           Virtual <span className="ml-1 text-neutral-300">(3)</span>

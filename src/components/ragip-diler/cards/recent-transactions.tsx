@@ -5,35 +5,35 @@ import Image from 'next/image';
 export default function RecentTransactions() {
   const RecentTransactionItems = [
     {
-      logo: '/ragip-diller/netflix-logo.svg',
+      logo: '/ragip-diler/netflix-logo.svg',
       title: 'Netflix',
       date: 'Wed, Sep 18, 01:53AM',
       category: 'Entertainement',
       price: '7.50',
     },
     {
-      logo: '/ragip-diller/spotify-logo.svg',
+      logo: '/ragip-diler/spotify-logo.svg',
       title: 'Spotify',
       date: 'Wed, Sep 18, 06:53PM',
       category: 'Entertainement',
       price: '5.00',
     },
     {
-      logo: '/ragip-diller/framer-logo.svg',
+      logo: '/ragip-diler/framer-logo.svg',
       title: 'Framer Pro',
       date: 'Wed, Sep 18, 10:19AM',
       category: 'Software Service',
       price: '29.90',
     },
     {
-      logo: '/ragip-diller/prime-logo.svg',
+      logo: '/ragip-diler/prime-logo.svg',
       title: 'Amazon Prime',
       date: 'Wed, Sep 18, 11:22PM',
       category: 'Shopping',
       price: '4.99',
     },
     {
-      logo: '/ragip-diller/x-logo.svg',
+      logo: '/ragip-diler/x-logo.svg',
       title: 'X Premium',
       date: 'Wed, Sep 18, 09:03AM',
       category: 'Social Media',

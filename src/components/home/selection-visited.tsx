@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 import { Badge } from '../ui/badge';
 import { Card } from '../ui/card';
 import { Clock } from 'lucide-react';
+import Link from 'next/link';
 
 export default function SelectionVisited() {
   const selectionItems = [
@@ -13,6 +14,7 @@ export default function SelectionVisited() {
       hours: '2 hours ago',
       title: 'Ragip Diler - Dashboard',
       badge: 'Finance App',
+      link: '/ragip-diler/dashboard/home',
     },
   ];
 
@@ -39,13 +41,15 @@ export default function SelectionVisited() {
                 <p>{item.date_month}</p>
                 <p className="text-2xl font-medium text-neutral-700">30</p>
               </div>
-              <Image
-                src={item.image}
-                height={180}
-                width={180}
-                alt="Ragip Diler Dashboard"
-                className="rounded-lg border-[0.25px]"
-              />
+              <Link href={`${item.link}`}>
+                <Image
+                  src={item.image}
+                  height={180}
+                  width={180}
+                  alt="Ragip Diler Dashboard"
+                  className="rounded-lg border-[0.25px]"
+                />
+              </Link>
               <article className="px-2 text-neutral-700 flex flex-col gap-2">
                 <div className="flex items-center gap-2">
                   <Clock size={12} />
