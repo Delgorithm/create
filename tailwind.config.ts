@@ -10,6 +10,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'watch-sm': '162px',
+        'watch-md': '197px',
+        xxs: '320px',
+        xs: '375px',
+        'sm-md': '400px',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+        '3xl': '1920px',
+        '4xl': '2560px',
+        '5xl': '3840px',
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
