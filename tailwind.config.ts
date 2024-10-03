@@ -15,7 +15,7 @@ const config: Config = {
         'watch-md': '197px',
         xxs: '320px',
         xs: '375px',
-        'sm-md': '400px',
+        'sm-md': '520px',
         sm: '640px',
         md: '768px',
         lg: '1024px',

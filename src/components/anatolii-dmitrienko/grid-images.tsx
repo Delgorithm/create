@@ -102,7 +102,7 @@ export default function GridImages() {
   const thirdGridFaces = gridFaces.slice(20, 30);
 
   return (
-    <section className="overflow-hidden rounded-xl shadow-inner relative">
+    <section className="overflow-hidden rounded-xl shadow-inner relative sm-md:w-1/2 ">
       <motion.div
         className="flex items-center gap-[0.5px] overflow-hidden "
         animate={{
