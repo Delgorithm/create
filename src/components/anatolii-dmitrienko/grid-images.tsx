@@ -102,7 +102,7 @@ export default function GridImages() {
   const thirdGridFaces = gridFaces.slice(20, 30);
 
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden rounded-xl shadow-inner relative">
       <motion.div
         className="flex items-center gap-[0.5px] overflow-hidden "
         animate={{
@@ -122,10 +122,11 @@ export default function GridImages() {
             width={400}
             height={400}
             alt="People faces"
-            className="size-16"
+            className="size-20"
           />
         ))}
       </motion.div>
+
       <motion.div
         className="flex items-center gap-[0.5px] overflow-hidden "
         animate={{
@@ -145,12 +146,13 @@ export default function GridImages() {
             width={400}
             height={400}
             alt="People faces"
-            className="size-16"
+            className="size-20"
           />
         ))}
       </motion.div>
+
       <motion.div
-        className="flex items-center gap-[0.5px] overflow-hidden "
+        className="flex items-center gap-[0.5px] overflow-hidden"
         animate={{
           x: [-330, 0, -330],
         }}
@@ -168,10 +170,11 @@ export default function GridImages() {
             width={400}
             height={400}
             alt="People faces"
-            className="size-16"
+            className="size-20"
           />
         ))}
       </motion.div>
+      <div className="w-full h-20 absolute bottom-0 bg-neutral-950 blur-3xl"></div>
     </section>
   );
 }
