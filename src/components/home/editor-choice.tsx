@@ -16,11 +16,11 @@ export default function EditorChoice() {
     },
     {
       image: '/ragip-diler/gray-bg.webp',
-      badge: 'x',
-      hours: 'x hours ago',
-      parapraph: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      autor: 'X',
-      link: '/',
+      badge: 'Bento',
+      hours: '1 hours ago',
+      parapraph: 'A beautifyl bento grid display.',
+      autor: 'Anatolii Dmitrienko',
+      link: '/anatolii-dmitrienko',
     },
   ];
 
