@@ -20,7 +20,7 @@ export default function FifthGrid() {
       />
 
       <motion.div
-        className="w-full h-12 bg-white absolute top-2"
+        className="w-full h-12 bg-white absolute top-[3%]"
         variants={fadeAnimation}
         initial="hidden"
         animate="visible"
@@ -32,7 +32,7 @@ export default function FifthGrid() {
         }}
       />
       <motion.div
-        className="w-full h-12 bg-white absolute top-[4.2rem]"
+        className="w-full h-12 bg-white absolute top-[23%]"
         variants={fadeAnimation}
         initial="hidden"
         animate="visible"
@@ -44,7 +44,7 @@ export default function FifthGrid() {
         }}
       />
       <motion.div
-        className="w-full h-12 bg-white absolute top-[7.3rem]"
+        className="w-full h-12 bg-white absolute top-[42%]"
         variants={fadeAnimation}
         initial="hidden"
         animate="visible"
@@ -56,7 +56,7 @@ export default function FifthGrid() {
         }}
       />
       <motion.div
-        className="w-full h-16 bg-white absolute top-[10.5rem]"
+        className="w-full h-16 bg-white absolute top-[58%]"
         variants={fadeAnimation}
         initial="hidden"
         animate="visible"
@@ -68,7 +68,7 @@ export default function FifthGrid() {
         }}
       />
       <motion.div
-        className="w-full h-10 bg-white absolute top-60"
+        className="w-full h-10 bg-white absolute top-[82%]"
         variants={fadeAnimation}
         initial="hidden"
         animate="visible"
