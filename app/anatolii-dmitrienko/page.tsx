@@ -1,8 +1,11 @@
-import FifthGrid from '@/components/anatolii-dmitrienko/fourth-grid';
+import EightGrid from '@/components/anatolii-dmitrienko/eigth-grid';
+import FifthGrid from '@/components/anatolii-dmitrienko/fifth-grid';
 import GridImages from '@/components/anatolii-dmitrienko/grid-images';
 import SecondGrid from '@/components/anatolii-dmitrienko/second-grid';
+import SeventhGrid from '@/components/anatolii-dmitrienko/seventh-grid';
+import SixthGrid from '@/components/anatolii-dmitrienko/sixth-grid';
 import ThirdGrid from '@/components/anatolii-dmitrienko/third-grid';
-import Image from 'next/image';
+import { ArrowUpRight, Github } from 'lucide-react';
 
 {
   /* Anatolii Dmitrienko */
@@ -10,7 +13,7 @@ import Image from 'next/image';
 
 export default function AnatoliiDmitrienkoPage() {
   return (
-    <section className="watch-sm:my-8 watch-sm:mx-4 h-screen watch-sm:text-xs">
+    <section className="watch-sm:py-8 watch-sm:mx-4 h-full watch-sm:text-xs">
       <div className="grid watch-sm:grid-cols-1 watch-sm:grid-rows-17 watch-sm:gap-4">
         <div className="watch-sm:row-span-3 border-[0.25px] border-neutral-50 shadow-sm rounded-xl relative">
           <GridImages />
@@ -26,7 +29,7 @@ export default function AnatoliiDmitrienkoPage() {
             beautifully.
           </p>
         </div>
-        <div className="watch-sm:row-span-2 border-[0.25px] border-neutral-50 bg-neutral-100/60 shadow-sm rounded-xl px-4 py-6">
+        <div className="watch-sm:row-span-2 border-[0.25px] border-neutral-50 bg-white rounded-xl px-4 py-6">
           <article className="flex justify-center gap-6">
             <p className="text-3xl relative">
               30
@@ -47,13 +50,20 @@ export default function AnatoliiDmitrienkoPage() {
           <FifthGrid />
         </div>
         <div className="watch-sm:row-span-3 border-[0.25px] border-neutral-50 shadow-sm rounded-xl">
-          6
+          <SixthGrid />
         </div>
         <div className="watch-sm:row-span-2 border-[0.25px] border-neutral-50 shadow-sm rounded-xl">
-          7
+          <SeventhGrid />
         </div>
-        <div className="watch-sm:row-span-2 border-[0.25px] border-neutral-50 shadow-sm rounded-xl">
-          8
+        <div className="watch-sm:row-span-2 border-[0.25px] border-neutral-50 shadow-sm rounded-xl relative">
+          <EightGrid />
+          <article className="px-6 absolute w-full bottom-2 text-neutral-50">
+            <Github />
+            <div className="flex items-center justify-between py-3">
+              <p>Check my GitHub</p>
+              <ArrowUpRight />
+            </div>
+          </article>
         </div>
       </div>
     </section>
