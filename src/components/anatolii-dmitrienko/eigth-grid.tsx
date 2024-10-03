@@ -8,7 +8,7 @@ export default function EightGrid() {
         height={500}
         width={500}
         alt="Apparel"
-        className="object-cover h-32 rounded-xl"
+        className="object-cover h-32 rounded-xl brightness-[0.8]"
       />
     </section>
   );

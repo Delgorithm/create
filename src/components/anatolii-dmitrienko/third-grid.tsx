@@ -8,9 +8,8 @@ export default function ThirdGrid() {
         height={500}
         width={500}
         alt="Apparel"
-        className="h-32 object-cover rounded-xl"
+        className="h-32 object-cover rounded-xl brightness-[0.7]"
       />
-      <div className="w-full h-6 absolute top-8 bg-neutral-950 blur-3xl"></div>
     </section>
   );
 }

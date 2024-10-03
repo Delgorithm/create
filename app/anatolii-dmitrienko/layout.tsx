@@ -3,5 +3,5 @@ export default function AnatoliiDmitrienkoLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="bg-white h-full">{children}</div>;
+  return <div className="">{children}</div>;
 }
