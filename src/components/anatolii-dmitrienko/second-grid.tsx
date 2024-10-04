@@ -8,7 +8,7 @@ export default function SecondGrid() {
         width={500}
         height={500}
         alt="Photography of a person"
-        className="rounded-xl h-32 object-cover brightness-[0.6]"
+        className="rounded-xl h-32 watch-sm:object-cover brightness-[0.6] sm-md:min-h-fit sm-md:object-fill"
       />
     </section>
   );

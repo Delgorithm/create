@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function SeventhGrid() {
   return (
-    <section className="py-5">
+    <section className="watch-sm:py-5 sm-md:py-0 sm-md:flex sm-md:flex-col justify-center items-center h-full sm-md:px-3">
       <article className="flex justify-center items-center gap-6">
         <p className="text-3xl relative">
           100

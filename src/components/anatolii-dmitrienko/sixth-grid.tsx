@@ -7,7 +7,7 @@ export default function SixthGrid() {
       height={500}
       width={500}
       alt="Apparel"
-      className="object-cover h-64 rounded-xl brightness-[0.8]"
+      className="object-cover watch-sm:h-64 sm-md:h-full rounded-xl brightness-[0.8]"
     />
   );
 }
