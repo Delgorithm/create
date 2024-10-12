@@ -22,6 +22,14 @@ export default function EditorChoice() {
       autor: 'Anatolii Dmitrienko',
       link: '/anatolii-dmitrienko',
     },
+    {
+      image: '',
+      badge: 'Grid',
+      hours: '1 hour ago',
+      paragraph: 'A design based on CSS grid',
+      autor: 'Ensaktas',
+      link: '/ensaktas',
+    },
   ];
 
   return (
