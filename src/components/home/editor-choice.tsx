@@ -30,6 +30,14 @@ export default function EditorChoice() {
       autor: 'Ensaktas',
       link: '/ensaktas',
     },
+    {
+      image: '',
+      badge: 'Disk',
+      hours: '1 hour ago',
+      paragraph: 'Choose your music',
+      autor: 'Vaun Blu',
+      link: '/vaunblu',
+    },
   ];
 
   return (
