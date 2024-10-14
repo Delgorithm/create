@@ -127,7 +127,7 @@ const config: Config = {
           },
           '50%': {
             borderRadius: '100%',
-            top: '-7rem',
+            top: '-12rem',
             left: '0rem',
             zIndex: '0',
           },
