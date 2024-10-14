@@ -36,7 +36,6 @@ const formattedTime = (seconds: number) => {
   return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
 };
 
-// Composant principal
 export default function Disk() {
   const totalDuration = 267;
   const { data: currentSeconds = 0 } = useTimer(totalDuration);
@@ -59,7 +58,7 @@ export default function Disk() {
       {diskItem.map((disk, index) => (
         <Card
           key={index}
-          className="px-16 py-24 rounded-[2.5rem] relative overflow-hidden"
+          className="px-16 py-24 rounded-[2.5rem] relative overflow-hidden bg-gradient-to-b from-neutral-100/10 via-neutral-300/10 to-neutral-500/10"
         >
           <div>
             <Image
@@ -67,12 +66,16 @@ export default function Disk() {
               width={100}
               height={100}
               alt=""
-              className="w-60 absolute -top-28 left-[0.95rem] rounded-full animate-spin-slow border-[0.5px] border-neutral-400"
+              className={
+                isFullScreen
+                  ? 'absolute animate-albumCover'
+                  : 'animate-albumCoverReverse w-60 absolute -top-28 left-[0.95rem] rounded-full border-[0.5px] border-neutral-400'
+              }
               onClick={toggleFullScreen}
             />
             <div className="absolute -top-4 left-[43%]">
-              <Circle className="text-white stroke-[0.5] bg-neutral-300 rounded-full size-11 relative z-50" />
-              <Circle className="absolute size-16 -top-2.5 -left-2.5 bg-neutral-400 stroke-[0.5] text-neutral-400 rounded-full border-[0.8px] border-white z-40" />
+              <Circle className="text-white stroke-[0.5] bg-neutral-300 rounded-full size-11 relative z-40" />
+              <Circle className="absolute size-16 -top-2.5 -left-2.5 bg-neutral-400 stroke-[0.5] text-neutral-400 rounded-full border-[0.8px] border-white z-30" />
               <CircleDashed className="absolute size-[4.9rem] -top-[1.1rem] -left-[1.1rem] stroke-[0.5] text-neutral-200/40  animate-spin-slow" />
             </div>
             <div className="flex flex-col items-center justify-end h-full gap-3 translate-y-14 ">
